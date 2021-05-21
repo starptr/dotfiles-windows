@@ -1,4 +1,5 @@
 New-Alias l ls
+$env:EDITOR = "nvim"
 $env:VISUAL = "code"
 
 $env:Path = "$HOME\bin;$env:Path"
