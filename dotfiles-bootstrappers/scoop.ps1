@@ -9,7 +9,7 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","User") + ";" + 
 # chezmoi bucket
 scoop bucket add twpayne https://github.com/twpayne/scoop-bucket
 # Install essentials
-scoop install 7zip aria2 git sudo which neovim-nightly chezmoi
+scoop install 7zip aria2 git sudo which neovim-nightly chezmoi neovide nodejs-lts
 
 # Delete chezmoi binary from bootstrap
 Remove-Item ~/bin/chezmoi.exe
