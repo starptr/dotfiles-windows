@@ -7,5 +7,6 @@ $ErrorActionPreference = "Stop"
 ~/bin/chezmoi.exe apply
 
 # Now, all of the other files in the repo are local to the filesystem
-& "~\shim.ps1"
 & "~\scoop.ps1"
+& "~\yadm.ps1"
+& "~\shim.ps1"
