@@ -9,4 +9,5 @@ $ErrorActionPreference = "Stop"
 # Now, all of the other files in the repo are local to the filesystem
 & "~\scoop.ps1"
 & "~\yadm.ps1"
+& "~\nvim.ps1"
 & "~\shim.ps1"
