@@ -12,4 +12,4 @@ Dotfiles for windows
     $env:SCOOP_GLOBAL='F:\GlobalScoopApps'
     [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
     ```
-3. Run `iex ((new-object net.webclient).DownloadString('https://raw.github.com/starptr/dotfiles-windows/main/bin/bootstrap.ps1'))`
+3. Run `iex ((new-object net.webclient).DownloadString('https://raw.github.com/starptr/dotfiles-windows/main/dotfiles-bootstrappers/bootstrap.ps1'))`
