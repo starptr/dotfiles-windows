@@ -8,3 +8,6 @@ cmd.exe /c "mklink /j $env:appdata\alacritty $HOME\dotfiles-linux\.config\alacri
 
 # Junction to wezterm config
 cmd.exe /c "mklink /j $HOME\.config\wezterm $HOME\dotfiles-linux\.config\wezterm"
+
+# Junction to lsd config
+cmd.exe /c "mklink /j $env:appdata\lsd $HOME\dotfiles-linux\.config\lsd"
