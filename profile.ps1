@@ -12,4 +12,4 @@ function nve { neovide.exe }
 
 # Initialize starship
 #$ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
-#Invoke-Expression (&starship init powershell)
+Invoke-Expression (&starship init powershell)
