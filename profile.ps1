@@ -28,7 +28,7 @@ function cma {
 }
 function cmg { chezmoi cd }
 
-function nve { neovide.exe }
+function nve { neovide.exe $args }
 
 # Enable tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
