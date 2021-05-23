@@ -1,0 +1,14 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[hostname]
+#ssh_only = false
+
+[username]
+show_always = true
+
+[line_break]
+disabled = true
+
+#format = """
+#❯ """
