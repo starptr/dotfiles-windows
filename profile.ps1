@@ -10,6 +10,9 @@ function l { ls.exe --color -A }
 function la { ls.exe --color -al }
 function nve { neovide.exe }
 
+# Enable tab completion
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
 # Initialize starship
 #$ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 Invoke-Expression (&starship init powershell)
