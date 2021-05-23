@@ -8,7 +8,7 @@ $env:Path = "$HOME\bin;$env:Path"
 # Set aliases
 function l { ls.exe --color -A }
 function la { ls.exe --color -al }
-function d { lsd }
+function d { lsd -A }
 function da { lsd -al }
 
 function cm { chezmoi }
