@@ -1,0 +1,29 @@
+{
+	"name": "Vimium C",
+	"@time": "11/14/2020, 3:45:57 PM",
+	"time": 1605397557602,
+	"environment": {
+		"extension": "1.86.2",
+		"platform": "win",
+		"chrome": 86
+	},
+	"exclusionRules": [
+		{
+			"pattern": ":https://mail.google.com/",
+			"passKeys": "^ J K t "
+		},
+		{
+			"pattern": ":https://twitter.com/",
+			"passKeys": "^ J K t x "
+		},
+		{
+			"pattern": ":https://vim-adventures.com/",
+			"passKeys": ""
+		},
+		{
+			"pattern": ":http://generals.io/",
+			"passKeys": ""
+		}
+	],
+	"scrollStepSize": 150
+}
