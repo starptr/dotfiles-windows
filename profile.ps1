@@ -30,6 +30,13 @@ function cmg { chezmoi cd }
 
 function nve { neovide.exe $args }
 
+function y2mp3 {
+	param (
+		$url
+		  )
+	youtube-dl --extract-audio --audio-format mp3 $url
+}
+
 # Enable tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
