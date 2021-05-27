@@ -39,6 +39,8 @@ function y2mp3 {
 
 # Enable tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+# Enable <c-d> exit
+Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 
 # Initialize starship
 #$ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
