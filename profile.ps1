@@ -2,6 +2,9 @@
 $env:EDITOR = "nvim"
 $env:VISUAL = "code"
 
+# Hacky workaround to prioritize scoop binaries
+$env:Path = "$env:SCOOP\shims;$env:Path"
+
 # Add essentials dirs to path
 $env:Path = "$HOME\bin;$env:Path"
 
