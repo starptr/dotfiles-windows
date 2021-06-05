@@ -8,6 +8,10 @@ $env:Path = "$env:SCOOP\shims;$env:Path"
 # Add essentials dirs to path
 $env:Path = "$HOME\bin;$env:Path"
 
+# Add wezterm nightly dir to path
+$wezterm_dir_computed = (Resolve-Path "$HOME\bin\WezTerm-windows-*").path
+$env:Path = "$wezterm_dir_computed;$env:Path"
+
 # Set aliases
 function l { ls.exe --color -A }
 function la { ls.exe --color -al }
