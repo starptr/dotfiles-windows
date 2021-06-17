@@ -2,6 +2,9 @@
 $env:EDITOR = "nvim"
 $env:VISUAL = "code"
 
+# Set rustup env vars
+$env:CARGO_HOME = "$env:SCOOP\persist\rustup-msvc\.cargo"
+$env:RUSTUP_HOME = "$env:SCOOP\persist\rustup-msvc\.rustup"
 # Add rust bin dir
 $env:Path = "$env:SCOOP\persist\rustup-msvc\.cargo\bin;$env:Path"
 
