@@ -14,8 +14,8 @@ $wezterm_dir_computed = (Resolve-Path "$HOME\bin\WezTerm-windows-*").path
 $env:Path = "$wezterm_dir_computed;$env:Path"
 
 # Add VC++ build tools
-$vcpp_build_tools_dir_computed = (Resolve-Path "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\*\bin\Hostx64\x64").path
-$env:Path = "$vcpp_build_tools_dir_computed;$env:Path"
+#$vcpp_build_tools_dir_computed = (Resolve-Path "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\*\bin\Hostx64\x64").path
+#$env:Path = "$vcpp_build_tools_dir_computed;$env:Path"
 
 # Set rustup env vars
 $env:CARGO_HOME = "$env:SCOOP\persist\rustup-msvc\.cargo"
@@ -48,6 +48,15 @@ function cmg { chezmoi cd }
 
 function snvim { nvim -u NONE $args }
 function nve { neovide.exe $args }
+
+# Nvim with VC++ build tools for nvim-treesitter
+function nts {
+	$vs_install_path = vswhere.exe -latest -property installationPath
+	$command = '{0}\Common7\Tools\VsDevCmd.bat' -f $vs_install_path
+	$command = $command.replace(' ', '^ ').replace('(', '^(').replace(')', '^)')
+	echo $command
+	cmd.exe /c $command `& powershell.exe -C nvim $args
+}
 
 function y2mp3 {
 	param (
