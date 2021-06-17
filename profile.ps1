@@ -2,6 +2,9 @@
 $env:EDITOR = "nvim"
 $env:VISUAL = "code"
 
+# Add rust bin dir
+$env:Path = "$env:SCOOP\persist\rustup-msvc\.cargo\bin;$env:Path"
+
 # Hacky workaround to prioritize scoop binaries
 $env:Path = "$env:SCOOP\shims;$env:Path"
 
