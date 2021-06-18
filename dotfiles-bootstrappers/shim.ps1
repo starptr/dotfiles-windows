@@ -11,3 +11,6 @@ cmd.exe /c "mklink /j $HOME\.config\wezterm $HOME\dotfiles-linux\.config\wezterm
 
 # Junction to lsd config
 cmd.exe /c "mklink /j $env:appdata\lsd $HOME\dotfiles-linux\.config\lsd"
+
+# Junction to bat config
+cmd.exe /c "mklink /j $HOME\.config\bat $HOME\dotfiles-linux\.config\bat"
