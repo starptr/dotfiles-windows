@@ -3,6 +3,9 @@ $ErrorActionPreference = "Stop"
 # Link powershell profile
 cmd.exe /c "mklink $profile $HOME\profile.ps1"
 
+# Junction to nvim config
+cmd.exe /c "mklink /j $env:localappdata\nvim $HOME\dotfiles-linux\.config\nvim"
+
 # Junction to alacritty config
 cmd.exe /c "mklink /j $env:appdata\alacritty $HOME\dotfiles-linux\.config\alacritty"
 
