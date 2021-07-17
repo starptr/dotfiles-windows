@@ -14,6 +14,8 @@ cmd.exe /c "mklink /j $env:appdata\lsd $HOME\dotfiles-linux\.config\lsd"
 
 # Junction to bat config
 cmd.exe /c "mklink /j $env:appdata\bat $HOME\dotfiles-linux\.config\bat"
+# For day-n-nite compatibility
+cmd.exe /c "mklink /j $HOME\.config\bat $HOME\dotfiles-linux\.config\bat"
 
 # Junction to tridactyl config
 cmd.exe /c "mklink /j $HOME\.config\tridactyl $HOME\dotfiles-linux\.config\tridactyl"
